@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -9,7 +8,6 @@ class CustomTextField extends StatelessWidget {
   final Color? hintColor;
   final Color? color;
   final double? fontSize;
-
 
   final bool? enabled;
   final bool? isDense;
@@ -96,12 +94,8 @@ class CustomTextField extends StatelessWidget {
         hintText: hintText,
         counter: null,
         counterText: "",
-        hintStyle: TextStyle(
-          fontWeight: FontWeight.w600,
-          fontSize: fontSize ?? 12,
-          color: hintColor ?? Colors.grey
-        ),
-        border: OutlineInputBorder(borderRadius: BorderRadius.circular(10.0), borderSide: BorderSide(color: Theme.of(context).primaryColor.withOpacity(0.4))),
+        hintStyle: TextStyle(fontWeight: FontWeight.w600, fontSize: fontSize ?? 12, color: hintColor ?? Colors.grey),
+        border: OutlineInputBorder(borderRadius: BorderRadius.circular(5.0), borderSide: BorderSide(color: Theme.of(context).primaryColor.withOpacity(0.4))),
         focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(10.0), borderSide: BorderSide(color: Theme.of(context).primaryColor.withOpacity(0.4))),
         enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(10.0), borderSide: BorderSide(color: Theme.of(context).primaryColor.withOpacity(0.4))),
         disabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(10.0), borderSide: BorderSide(color: Theme.of(context).primaryColor.withOpacity(0.4))),
@@ -110,6 +104,4 @@ class CustomTextField extends StatelessWidget {
       ),
     );
   }
-
-
 }
